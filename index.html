@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="España Viva: viaje visual audaz por cultura, regiones, gastronomía y paisajes de España."
+    />
+    <title>España Viva | Oscura, Terrosa y Cautivadora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navegacion principal">
+        <a class="brand" href="#inicio">EspañaViva</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">
+          <span class="sr-only">Abrir menu</span>
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="menu" class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#regiones">Comunidades</a></li>
+          <li><a href="#gastronomia">Gastronomia</a></li>
+          <li><a href="#arte">Arte</a></li>
+          <li><a href="#fiestas">Fiestas</a></li>
+          <li><a href="#curiosidades">Curiosidades</a></li>
+          <li><a href="#relieve-mares">Relieve y mares</a></li>
+          <li><a href="#despoblacion">Despoblacion</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero section">
+        <div class="container hero-grid reveal">
+          <div>
+            <p class="eyebrow">01. Hero principal</p>
+            <h1>España intensa: vino, historia y noches con carácter</h1>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#relieve-mares">Diseñar mi ruta</a>
+              <a class="btn btn-ghost" href="#gastronomia">Ver sabores</a>
+            </div>
+          </div>
+          <figure class="media-frame tilt">
+            <img
+              src="../img/mixboard-image%20%281%29.png"
+              alt="Calles de España al atardecer"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section id="regiones" class="section section-alt">
+        <div class="container reveal communities-wrap">
+          <p class="eyebrow">02. Comunidades autónomas</p>
+          <h2>Las 17 comunidades autónomas de España</h2>
+          <p class="communities-subtitle">
+            Diversidad cultural, geográfica y gastronómica en un solo país.
+          </p>
+          <ul class="communities-list">
+            <li>Andalucía</li>
+            <li>Aragón</li>
+            <li>Asturias</li>
+            <li>Cantabria</li>
+            <li>Castilla y León</li>
+            <li>Castilla-La Mancha</li>
+            <li>Cataluña</li>
+            <li>Comunidad Valenciana</li>
+            <li>Extremadura</li>
+            <li>Galicia</li>
+            <li>Islas Baleares</li>
+            <li>Islas Canarias</li>
+            <li>La Rioja</li>
+            <li>Madrid</li>
+            <li>Murcia</li>
+            <li>Navarra</li>
+            <li>País Vasco</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="gastronomia" class="section">
+        <div class="container editorial reveal reverse">
+          <div>
+            <p class="eyebrow">03. Gastronomía</p>
+            <h2>Sabores con historia: del gazpacho al marmitako</h2>
+            <ul class="list">
+              <li>Andalucía: gazpacho, salmorejo y rabo de toro.</li>
+              <li>Asturias: fabada, Cabrales y sidra escanciada.</li>
+              <li>Valencia: paella y horchata con fartons.</li>
+              <li>Murcia: pastel de carne y marinera.</li>
+              <li>Extremadura: migas y Torta del Casar.</li>
+            </ul>
+          </div>
+          <figure class="media-frame">
+            <img
+              src="../img/Paella_ Historia de una de las recetas más famosas de España - De Rechupete.jpg"
+              alt="Paella historia de una receta famosa de España"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section id="arte" class="section section-alt">
+        <div class="container editorial reveal">
+          <figure class="media-frame">
+            <img
+              src="../img/Seville, Spain.jpg"
+              alt="Sevilla, España"
+              loading="lazy"
+            />
+          </figure>
+          <div>
+            <p class="eyebrow">06. Datos curiosos por comunidades</p>
+            <h2>Historias locales que hacen única a cada región</h2>
+            <ul class="list compact">
+              <li>Andalucía: Alberga la Alhambra de Granada y la Mezquita de Córdoba, ambas Patrimonio de la Humanidad. En Sevilla hay una estatua de un explorador indio en la avenida "Kansas City", debido al hermanamiento entre ambas ciudades. El punto más alto de la Península es el Mulhacén (Granada) con 3.478 metros.</li>
+              <li>Aragón: En Torralba (Zaragoza) se celebran "encierros del bus": ante la falta de permisos para vaquillas hace años, soltaron un autobús de línea y la tradición se quedó. Teruel es parte de la "Laponia del Sur" por su bajísima densidad de población.</li>
+              <li>Asturias: Cada agosto se celebra el Descenso Internacional del Sella, una multitudinaria fiesta deportiva y festiva.</li>
+              <li>Canarias: El Teide (Tenerife) es el pico más alto de España (3.718 m) y es un Parque Nacional Patrimonio de la Humanidad. Tienen un régimen económico y fiscal especial (REF) debido a su insularidad.</li>
+              <li>Cantabria: Alberga la Cueva de Altamira, la "Capilla Sixtina del arte rupestre". Se celebra La Vijanera en Silió, una mascarada invernal donde los zarramacos ahuyentan malos espíritus con cencerros.</li>
+              <li>Castilla y León: En la fachada de la Universidad de Salamanca hay una rana tallada sobre una calavera; se dice que el estudiante que la encuentre aprobará todo. En Salamanca también existe la tradición del "Mariquelo", un hombre que sube a la torre de la catedral cada 31 de octubre para agradecer que el terremoto de Lisboa de 1755 no causó muertes allí.</li>
+              <li>Castilla-La Mancha: Es el escenario de las aventuras de Don Quijote de la Mancha. Toledo es conocida como la "ciudad de las tres culturas" (judía, musulmana y cristiana).</li>
+              <li>Cataluña: En Verges (Girona) se celebra la Danza de la Muerte, un ritual medieval donde la gente se viste de esqueleto. En Barcelona hay una Estatua de la Libertad pequeña dentro de la Biblioteca Arús.</li>
+              <li>Comunidad Valenciana: En Ibi se celebra la fiesta de Los Enharinados cada 28 de diciembre, una "batalla" campal con harina, huevos y petardos.</li>
+              <li>Extremadura: Mérida alberga uno de los legados romanos más importantes, incluyendo su teatro y puente romanos. Según estudios, la tortilla de patatas fue documentada por primera vez en Villanueva de la Serena (Badajoz) en 1798.</li>
+              <li>Galicia: Santiago de Compostela es el destino final del Camino de Santiago y Patrimonio Mundial. El carnaval de Laza (Orense) presenta a los Peliqueiros, personajes con máscaras de madera muy antiguas cuyo origen exacto es desconocido.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="fiestas" class="section">
+        <div class="container editorial reveal reverse">
+          <div>
+            <p class="eyebrow">05. Fiestas y tradiciones</p>
+            <h2>Rituales populares que convierten la calle en escenario</h2>
+            <p>
+              celebraciones icónicas y curiosas:
+              Sanfermines en Pamplona, Feria de Abril en Sevilla, los
+              Enharinados en Ibi, La Vijanera en Cantabria o la Danza de la
+              Muerte en Girona.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Sanfermines</span>
+              <span class="pill">Feria de Abril</span>
+              <span class="pill">Descenso del Sella</span>
+              <span class="pill">Los Enharinados</span>
+              <span class="pill">La Vijanera</span>
+            </div>
+          </div>
+          <figure class="media-frame">
+            <img
+              src="../img/How%20to%20Enjoy%20Feria.jpg"
+              alt="Fiestas populares en Espana"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section id="curiosidades" class="section section-alt">
+        <div class="container editorial reveal">
+          <figure class="media-frame">
+            <img
+              src="../img/Los _castells_ (torres humanas) han sido….jpg"
+              alt="Castells y tradiciones curiosas de comunidades"
+              loading="lazy"
+            />
+          </figure>
+          <div>
+            <p class="eyebrow">04. Arte y arquitectura</p>
+            <h2>Patrimonio monumental y vanguardia viva</h2>
+            <p>
+              De la Mezquita de Córdoba y la Alhambra al modernismo catalán, el
+              arte en España es una tensión hermosa entre memoria y ruptura.
+            </p>
+            <p>
+              Esta dualidad también aparece en la tauromaquia como símbolo
+              cultural en parte del territorio: tradición, ritual y debate
+              social, además de su huella en artistas como Goya o Picasso.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="relieve-mares" class="section">
+        <div class="container reveal">
+          <p class="eyebrow">07. Ríos, montañas y mares de España</p>
+          <h2>Un territorio de cumbres, cuencas y costas decisivas</h2>
+          <div class="triple-grid">
+            <article class="route-card">
+              <details>
+                <summary>Montañas y sistemas</summary>
+                <p>
+                  El Teide: Ubicado en la isla de Tenerife (Canarias), es el pico más alto de España con una altitud de 3.718 metros sobre el nivel del mar. Es un espacio de extraordinario valor geológico declarado Patrimonio Mundial por la UNESCO.<br><br>
+                  Mulhacén: Situado en Sierra Nevada, provincia de Granada, es el punto de máxima altitud de la Península Ibérica con 3.478 metros.<br><br>
+                  Los Pirineos: Se encuentran en el norte, marcando la frontera natural con Francia y Andorra. Son fundamentales como barrera climática que retiene las masas de aire atlántico. Destaca la zona de Pirineos-Monte Perdido, compartida con Francia.<br><br>
+                  Picos de Europa: Situados en el norte, entre Asturias, Cantabria y Castilla y León. Son conocidos por su paisaje de alta montaña y clima frío con nieves frecuentes.<br><br>
+                  Cordillera Cantábrica: Actúa como una barrera natural en el norte de España, dificultando que las lluvias lleguen al interior de la península y concentrándolas en la franja septentrional.<br><br>
+                  Meseta Central: Aunque no es una montaña individual, es la unidad de relieve que domina el interior peninsular y aísla la zona central de la influencia reguladora del mar.<br><br>
+                  Sistemas de La Rioja: Destacan las sierras de la Demanda y de Cameros, que protegen la región vinícola.<br><br>
+                  Serra de Tramuntana: Ubicada en la isla de Mallorca, es el relieve más importante de las Islas Baleares.
+                </p>
+              </details>
+            </article>
+            <article class="route-card">
+              <details>
+                <summary>Ríos clave</summary>
+                <p>
+                  Río Ebro: Es uno de los ríos más relevantes; atraviesa comunidades como Aragón y La Rioja, siendo un eje fundamental para la geografía y economía de estas regiones.<br><br>
+                  Río Sella: Situado en Asturias, es mundialmente famoso por celebrarse en él el Descenso Internacional del Sella, una festividad que combina deporte y tradición cada mes de agosto.<br><br>
+                  Río Esca: Ubicado en el Valle del Roncal (Navarra), es conocido históricamente por el transporte de madera en balsas denominadas almadías.<br><br>
+                  Río Miera: En Cantabria, este río es el escenario de la famosa leyenda del Hombre Pez de Liérganes, quien desapareció en sus aguas en el siglo XVII.
+                </p>
+              </details>
+            </article>
+            <article class="route-card">
+              <details>
+                <summary>Mares y océano</summary>
+                <p>
+                  Mar Cantábrico: Ubicado al norte de España, baña las costas de Galicia, Asturias, Cantabria y el País Vasco. Es conocido por sus fuertes vientos y olas que pueden alcanzar hasta 7 metros en primavera y otoño, con una longitud aproximada de 800 km y profundidad máxima de 2.789 m.<br><br>
+                  Mar Mediterráneo: Se encuentra al este y sureste de la península, bañando Cataluña, Comunidad Valenciana, Murcia y Andalucía oriental. Dentro del Mediterráneo se encuentran subdivisiones importantes: Mar de Alborán (parte más occidental del Mediterráneo, entre el sur de España y el norte de Marruecos), Mar Balear (entre la península ibérica y las Islas Baleares), Mar de Cerdeña (otra subdivisión del Mediterráneo).<br><br>
+                  Océano Atlántico: Rodea la costa oeste de Galicia, el suroeste de Andalucía y las Islas Canarias. Es fundamental para la economía y el clima de España, influyendo en la pesca, el comercio y el turismo.
+                </p>
+              </details>
+            </article>
+          </div>
+          <div id="map" style="height: 500px; width: 100%;"></div>
+        </div>
+      </section>
+
+      <section id="despoblacion" class="section section-alt">
+        <div class="container editorial reveal reverse">
+          <div>
+            <p class="eyebrow">08. Despoblación crítica</p>
+            <h2>El gran reto demográfico del interior peninsular</h2>
+            <p>
+              Según los datos del INE incluidos en tus documentos, 14 de 50
+              provincias se encuentran en situación crítica, con hasta un 80% de
+              municipios en riesgo grave de extinción demográfica.
+            </p>
+            <ul class="list compact">
+              <li>Red SSPA: Soria, Cuenca y Teruel por debajo de 12,5 hab/km².</li>
+              <li>Serranía Celtibérica: en zonas por debajo de 8 hab/km².</li>
+              <li>Franja con Portugal: casos destacados de Orense, Zamora y Salamanca.</li>
+            </ul>
+          </div>
+          <figure class="media-frame">
+            <img
+              src="../img/mixboard-image%20%282%29.png"
+              alt="Pueblo de interior y paisaje de baja densidad"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>España Viva © 2026</p>
+        <p>Estética oscura terrosa inspirada en narrativa vintage audaz.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var map = L.map('map').setView([40.4168, -3.7038], 6);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Markers for Spanish cities
+        L.marker([40.4168, -3.7038]).addTo(map)
+          .bindPopup('<b>Madrid</b><br>Capital de España.');
+
+        L.marker([41.3851, 2.1734]).addTo(map)
+          .bindPopup('<b>Barcelona</b><br>Ciudad de Gaudí.');
+
+        L.marker([37.3891, -5.9845]).addTo(map)
+          .bindPopup('<b>Sevilla</b><br>Feria de Abril.');
+
+        L.marker([36.7213, -4.4214]).addTo(map)
+          .bindPopup('<b>Málaga</b><br>Costa del Sol.');
+
+        // Polygon for example
+        L.polygon([
+          [40.4168, -3.7038],
+          [41.3851, 2.1734],
+          [37.3891, -5.9845]
+        ]).addTo(map).bindPopup('Triángulo de ciudades principales.');
+      });
+    </script>
+  </body>
+</html>
